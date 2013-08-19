@@ -1,0 +1,9 @@
+diff -urN krfb-4.11.0/krfb/krfb.desktop krfb-4.11.0-patched/krfb/krfb.desktop
+--- krfb-4.11.0/krfb/krfb.desktop	2013-08-06 23:50:51.000000000 +1100
++++ krfb-4.11.0-patched/krfb/krfb.desktop	2013-08-19 22:26:03.325354154 +1100
+@@ -143,4 +143,4 @@
+ GenericName[zh_CN]=桌面共享
+ GenericName[zh_HK]=桌面分享
+ GenericName[zh_TW]=桌面分享
+-Categories=Qt;KDE;System;Network;RemoteAccess;
++Categories=Qt;KDE;System;RemoteAccess;
