@@ -30,16 +30,16 @@ current session with a user on another machine, who can use a VNC client
 to view or even control the desktop.
 
 %files
-%{_kde_bindir}/krfb
-%{_kde_appsdir}/krfb
-%{_kde_applicationsdir}/krfb.desktop
-%{_kde_libdir}/kde4/krfb_*.so
-%{_kde_services}/krfb*.desktop
-%{_kde_servicetypes}/krfb*.desktop
-%{_kde_docdir}/HTML/*/krfb
-#### Telepathy-Qt4-based optional feature ####
-%{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.krfb_rfb*.service
-%{_datadir}/telepathy/clients/krfb_rfb*.client
+%{_bindir}/krfb                                                                                        
+%{_datadir}/apps/krfb                                                                                  
+%{_datadir}/applications/kde4/krfb.desktop                                                             
+%{_libdir}/kde4/krfb_*.so                                                                              
+%{_datadir}/kde4/services/krfb*.desktop                                                                
+%{_datadir}/kde4/servicetypes/krfb*.desktop                                                            
+%doc %{_docdir}/HTML/*/krfb                                                                            
+#### Telepathy-Qt4-based optional feature ####                                                         
+%{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.krfb_rfb*.service                         
+%{_datadir}/telepathy/clients/krfb_rfb*.client   
 
 #----------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ Group:		System/Libraries
 KRFB shared library.
 
 %files -n %{libkrfbprivate}
-%{_kde_libdir}/libkrfbprivate.so.%{krfbprivate_major}*
+%{_libdir}/libkrfbprivate.so.%{krfbprivate_major}*
 
 #----------------------------------------------------------------------------
 
