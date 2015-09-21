@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -23,6 +23,7 @@ BuildRequires:	pkgconfig(xdamage)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xtst)
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:	pkgconfig(libvncserver)
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
