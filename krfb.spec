@@ -13,17 +13,26 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		krfb-4.11.0-desktop.patch
-Patch1:		krfb-4.11.0-soversion.patch
-BuildRequires:	jpeg-devel
-BuildRequires:	kdelibs-devel
 BuildRequires:	pkgconfig(libxslt)
-BuildRequires:	pkgconfig(TelepathyQt4)
-BuildRequires:	pkgconfig(xdamage)
-BuildRequires:	pkgconfig(xext)
+BuildRequires:	pkgconfig(libvncserver) >= 0.9.10
 BuildRequires:	pkgconfig(xtst)
-BuildRequires:	pkgconfig(zlib)
-BuildRequires:	pkgconfig(libvncserver)
+BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5X11Extras)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5Completion)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5DNSSD)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5Wallet)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5XmlGu)
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
@@ -31,25 +40,22 @@ current session with a user on another machine, who can use a VNC client
 to view or even control the desktop.
 
 %files
-%{_bindir}/krfb                                                                                        
-%{_datadir}/apps/krfb                                                                                  
-%{_datadir}/applications/kde4/krfb.desktop                                                             
-%{_libdir}/kde4/krfb_*.so                                                                              
-%{_datadir}/kde4/services/krfb*.desktop                                                                
-%{_datadir}/kde4/servicetypes/krfb*.desktop                                                            
-%doc %{_docdir}/HTML/*/krfb                                                                            
-#### Telepathy-Qt4-based optional feature ####                                                         
-%{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.krfb_rfb*.service                         
-%{_datadir}/telepathy/clients/krfb_rfb*.client   
+%doc%{_docdir}/HTML/en/krfb
+%{_bindir}/krfb
+%{_qt5_plugindir}/krfb/*.so
+%{_datadir}/krfb
+%{_datadir}/applications/*.desktop
+%{_datadir}/kservicetypes5/krfb*.desktop
 
 #----------------------------------------------------------------------------
 
-%define krfbprivate_major 4
+%define krfbprivate_major 5
 %define libkrfbprivate %mklibname krfbprivate %{krfbprivate_major}
 
 %package -n %{libkrfbprivate}
 Summary:	KRFB shared library
 Group:		System/Libraries
+Obsoletes:	%{mklibname krfbprivate 4} < 3:15.12.0
 
 %description -n %{libkrfbprivate}
 KRFB shared library.
@@ -61,13 +67,10 @@ KRFB shared library.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%cmake_kde5
 
 %build
-%cmake_kde4 \
-	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
-%make
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
