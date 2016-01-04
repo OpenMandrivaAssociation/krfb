@@ -40,7 +40,7 @@ current session with a user on another machine, who can use a VNC client
 to view or even control the desktop.
 
 %files
-%doc%{_docdir}/HTML/en/krfb
+%doc %{_docdir}/HTML/en/krfb
 %{_bindir}/krfb
 %{_qt5_plugindir}/krfb/*.so
 %{_datadir}/krfb
