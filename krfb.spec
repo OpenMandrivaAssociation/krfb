@@ -13,6 +13,7 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/%{version}/src/%{name}-%{version}.tar.xz
+Source1:	%{name}.rpmlintrc
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libvncserver) >= 0.9.10
 BuildRequires:	pkgconfig(xtst)
