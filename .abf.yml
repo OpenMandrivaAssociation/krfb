@@ -1,4 +1,2 @@
-removed_sources:
-  krfb-15.08.0.tar.xz: e04864fd6532b2eb467fa59c025a092137d7015b
 sources:
-  krfb-15.12.3.tar.xz: 4f6f36b4d9ea310966a5db3528d28fd70058490b
+  krfb-16.04.0.tar.xz: 3ff4fe52d16b469cff469ef5de631884fc9022c5
