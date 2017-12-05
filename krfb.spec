@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -47,6 +47,7 @@ to view or even control the desktop.
 %{_datadir}/applications/*.desktop
 %{_datadir}/kservicetypes5/krfb*.desktop
 %{_datadir}/metainfo/org.kde.krfb.appdata.xml
+%{_datadir}/icons/*/*/*/krfb.*
 
 #----------------------------------------------------------------------------
 
