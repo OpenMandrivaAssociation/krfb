@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	 18.04.2
+Version:	 18.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
