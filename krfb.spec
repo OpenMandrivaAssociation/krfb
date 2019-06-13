@@ -14,6 +14,7 @@ Url:		http://www.kde.org
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
+Patch0:		krfb-19.04.2-menuentry.patch
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libvncserver) >= 0.9.10
 BuildRequires:	pkgconfig(xtst)
@@ -69,7 +70,7 @@ KRFB shared library.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
