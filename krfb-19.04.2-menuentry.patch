@@ -1,6 +1,6 @@
-diff -up krfb-19.04.2/krfb/org.kde.krfb.desktop.omv~ krfb-19.04.2/krfb/org.kde.krfb.desktop
---- krfb-19.04.2/krfb/org.kde.krfb.desktop.omv~	2019-06-13 21:13:16.446016238 +0200
-+++ krfb-19.04.2/krfb/org.kde.krfb.desktop	2019-06-13 21:14:53.277017222 +0200
+diff -up krfb-19.07.80/krfb/org.kde.krfb.desktop.1~ krfb-19.07.80/krfb/org.kde.krfb.desktop
+--- krfb-19.07.80/krfb/org.kde.krfb.desktop.1~	2019-07-18 08:44:59.000000000 +0200
++++ krfb-19.07.80/krfb/org.kde.krfb.desktop	2019-07-27 23:03:59.411172446 +0200
 @@ -6,74 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
@@ -150,6 +150,6 @@ diff -up krfb-19.04.2/krfb/org.kde.krfb.desktop.omv~ krfb-19.04.2/krfb/org.kde.k
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享
--Categories=Qt;KDE;System;Network;RemoteAccess;
-+Categories=Qt;KDE;System;Network;RemoteAccess;X-KDE-More;
+-Categories=Qt;KDE;Network;RemoteAccess;
++Categories=Qt;KDE;Network;RemoteAccess;X-KDE-More;
  X-DBUS-ServiceName=org.kde.krfb
