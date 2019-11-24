@@ -1,6 +1,6 @@
-diff -up krfb-19.07.80/krfb/org.kde.krfb.desktop.1~ krfb-19.07.80/krfb/org.kde.krfb.desktop
---- krfb-19.07.80/krfb/org.kde.krfb.desktop.1~	2019-07-18 08:44:59.000000000 +0200
-+++ krfb-19.07.80/krfb/org.kde.krfb.desktop	2019-07-27 23:03:59.411172446 +0200
+diff -up krfb-19.11.80/krfb/org.kde.krfb.desktop.1~ krfb-19.11.80/krfb/org.kde.krfb.desktop
+--- krfb-19.11.80/krfb/org.kde.krfb.desktop.1~	2019-11-11 09:48:29.000000000 +0100
++++ krfb-19.11.80/krfb/org.kde.krfb.desktop	2019-11-24 17:55:49.162399529 +0100
 @@ -6,74 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
@@ -146,10 +146,11 @@ diff -up krfb-19.07.80/krfb/org.kde.krfb.desktop.1~ krfb-19.07.80/krfb/org.kde.k
  GenericName=Desktop Sharing
  GenericName[ar]=مشاركة سطح المكتب
  GenericName[bg]=Споделяне на работния плот
-@@ -215,5 +217,5 @@ Comment[x-test]=xxDesktop Sharingxx
+@@ -215,6 +217,6 @@ Comment[x-test]=xxDesktop Sharingxx
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享
 -Categories=Qt;KDE;Network;RemoteAccess;
 +Categories=Qt;KDE;Network;RemoteAccess;X-KDE-More;
  X-DBUS-ServiceName=org.kde.krfb
+ X-KDE-Wayland-Interfaces=org_kde_kwin_fake_input,org_kde_kwin_remote_access_manager
