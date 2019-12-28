@@ -81,6 +81,3 @@ KRFB shared library.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
-
-# Workaround for gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
