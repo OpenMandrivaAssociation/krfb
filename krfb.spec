@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
 Version:	19.12.2
-Release:	2
+Release:	3
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -15,6 +15,7 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		krfb-19.04.2-menuentry.patch
+Patch1:		https://github.com/KDE/krfb/commit/92c9905f36722c764f19bcc7c2d76e7f8af1ece7.patch
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libvncserver) >= 0.9.10
 BuildRequires:	pkgconfig(xtst)
@@ -24,7 +25,7 @@ BuildRequires:	pkgconfig(Qt5X11Extras)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(xcb-image)
 BuildRequires:	pkgconfig(xdamage)
-BuildRequires:	pkgconfig(libpipewire-0.2)
+BuildRequires:	pkgconfig(libpipewire-0.3)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Completion)
