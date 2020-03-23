@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -15,7 +15,6 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		krfb-19.04.2-menuentry.patch
-Patch1:		https://github.com/KDE/krfb/commit/92c9905f36722c764f19bcc7c2d76e7f8af1ece7.patch
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libvncserver) >= 0.9.10
 BuildRequires:	pkgconfig(xtst)
