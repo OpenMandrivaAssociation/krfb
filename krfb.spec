@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	20.12.2
+Version:	20.12.3
 Release:	1
 Epoch:		3
 License:	GPLv2+
