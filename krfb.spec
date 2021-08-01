@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	21.04.2
+Version:	21.07.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -46,7 +46,14 @@ to view or even control the desktop.
 
 %files -f %{name}.lang
 %{_bindir}/krfb
-%{_qt5_plugindir}/krfb/*.so
+%dir %{_libdir}/qt5/plugins/krfb
+%dir %{_libdir}/qt5/plugins/krfb/events
+%dir %{_libdir}/qt5/plugins/krfb/framebuffer
+%{_libdir}/qt5/plugins/krfb/events/krfb_events_x11.so
+%{_libdir}/qt5/plugins/krfb/events/krfb_events_xdp.so
+%{_libdir}/qt5/plugins/krfb/framebuffer/krfb_framebuffer_pw.so
+%{_libdir}/qt5/plugins/krfb/framebuffer/krfb_framebuffer_qt.so
+%{_libdir}/qt5/plugins/krfb/framebuffer/krfb_framebuffer_xcb.so
 %{_datadir}/krfb
 %{_datadir}/applications/*.desktop
 %{_datadir}/kservicetypes5/krfb*.desktop
