@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -46,6 +46,7 @@ to view or even control the desktop.
 
 %files -f %{name}.lang
 %{_bindir}/krfb
+%{_bindir}/krfb-virtualmonitor
 %dir %{_libdir}/qt5/plugins/krfb
 %dir %{_libdir}/qt5/plugins/krfb/events
 %dir %{_libdir}/qt5/plugins/krfb/framebuffer
