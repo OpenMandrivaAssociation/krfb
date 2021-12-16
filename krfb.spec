@@ -38,6 +38,7 @@ BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5Wallet)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5Wayland)
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
