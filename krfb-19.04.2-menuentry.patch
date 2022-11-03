@@ -1,7 +1,7 @@
-diff -up krfb-20.11.80/krfb/org.kde.krfb.desktop.1~ krfb-20.11.80/krfb/org.kde.krfb.desktop
---- krfb-20.11.80/krfb/org.kde.krfb.desktop.1~	2020-11-11 10:36:42.000000000 +0100
-+++ krfb-20.11.80/krfb/org.kde.krfb.desktop	2020-11-22 00:38:43.695779010 +0100
-@@ -6,74 +6,76 @@ Icon=krfb
+diff -up krfb-22.08.3/krfb/org.kde.krfb.desktop.1~ krfb-22.08.3/krfb/org.kde.krfb.desktop
+--- krfb-22.08.3/krfb/org.kde.krfb.desktop.1~	2022-10-30 22:24:27.000000000 +0100
++++ krfb-22.08.3/krfb/org.kde.krfb.desktop	2022-11-03 17:27:36.578077607 +0100
+@@ -6,75 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
  Terminal=false
@@ -36,6 +36,7 @@ diff -up krfb-20.11.80/krfb/org.kde.krfb.desktop.1~ krfb-20.11.80/krfb/org.kde.k
 -Name[is]=Krfb
 -Name[it]=Krfb
 -Name[ja]=Krfb
+-Name[ka]=Krfb
 -Name[kk]=Krfb
 -Name[km]=Krfb
 -Name[ko]=Krfb
@@ -146,7 +147,7 @@ diff -up krfb-20.11.80/krfb/org.kde.krfb.desktop.1~ krfb-20.11.80/krfb/org.kde.k
  GenericName=Desktop Sharing (VNC)
  GenericName[ca]=Compartició de l'escriptori (VNC)
  GenericName[ca@valencia]=Compartició de l'escriptori (VNC)
-@@ -166,6 +168,6 @@ Comment[x-test]=xxDesktop Sharingxx
+@@ -178,6 +179,6 @@ Comment[x-test]=xxDesktop Sharingxx
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享
