@@ -1,18 +1,14 @@
+%define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	KDE Remote Desktop Server
 Name:		krfb
 Version:	23.04.0
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-%define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
-%if %{is_beta}
-%define ftpdir unstable
-%else
-%define ftpdir stable
-%endif
-Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		krfb-19.04.2-menuentry.patch
 BuildRequires:	pkgconfig(libxslt)
@@ -27,6 +23,7 @@ BuildRequires:	pkgconfig(xdamage)
 BuildRequires:	pkgconfig(libpipewire-0.3)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(wayland-client)
+BuildRequires:	pkgconfig(gbm)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Completion)
