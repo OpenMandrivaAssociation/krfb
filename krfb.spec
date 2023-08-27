@@ -40,7 +40,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5Wayland)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(Qt5XkbCommonSupport)
-BuildRequires:	cmake(KPipeWire)
+BuildRequires:	cmake(KPipeWire) < 5.27.50
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
