@@ -35,6 +35,8 @@ BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6Wallet)
 BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6XmlGui)
+BuildRequires:	cmake(KF6WindowSystem)
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(KPipeWire) < 6.27.60
 
