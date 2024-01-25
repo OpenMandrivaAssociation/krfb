@@ -39,6 +39,7 @@ BuildRequires:	cmake(KF6WindowSystem)
 BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(KPipeWire) < 6.27.60
+BuildRequires:	cmake(KWayland)
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
