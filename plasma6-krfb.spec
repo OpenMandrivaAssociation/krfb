@@ -5,7 +5,7 @@
 
 Summary:	KDE Remote Desktop Server
 Name:		plasma6-krfb
-Version:	24.02.1
+Version:	24.02.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
