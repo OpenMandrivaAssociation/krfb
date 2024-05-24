@@ -1,12 +1,13 @@
-diff -up krfb-24.02.1/krfb/org.kde.krfb.desktop.1~ krfb-24.02.1/krfb/org.kde.krfb.desktop
---- krfb-24.02.1/krfb/org.kde.krfb.desktop.1~	2024-03-15 21:54:55.000000000 +0100
-+++ krfb-24.02.1/krfb/org.kde.krfb.desktop	2024-03-24 04:42:30.973926340 +0100
-@@ -6,75 +6,76 @@ Icon=krfb
+diff -up krfb-24.05.0/krfb/org.kde.krfb.desktop.1~ krfb-24.05.0/krfb/org.kde.krfb.desktop
+--- krfb-24.05.0/krfb/org.kde.krfb.desktop.1~	2024-05-21 16:21:15.000000000 +0200
++++ krfb-24.05.0/krfb/org.kde.krfb.desktop	2024-05-24 02:06:34.302321593 +0200
+@@ -6,76 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
  Terminal=false
 -Name=Krfb
 -Name[ar]=كرفب
+-Name[ast]=Krfb
 -Name[bg]=Krfb
 -Name[bn]=কে-আর-এফ-বি
 -Name[br]=Krfb
@@ -147,7 +148,7 @@ diff -up krfb-24.02.1/krfb/org.kde.krfb.desktop.1~ krfb-24.02.1/krfb/org.kde.krf
  GenericName=Desktop Sharing (VNC)
  GenericName[ar]=مشاركة سطح المكتب (VNC)
  GenericName[ca]=Compartició de l'escriptori (VNC)
-@@ -184,6 +185,6 @@ Comment[x-test]=xxDesktop Sharingxx
+@@ -186,6 +186,6 @@ Comment[x-test]=xxDesktop Sharingxx
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享

@@ -5,7 +5,7 @@
 
 Summary:	KDE Remote Desktop Server
 Name:		plasma6-krfb
-Version:	24.02.2
+Version:	24.05.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -47,6 +47,8 @@ BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(KPipeWire) < 6.27.60
 BuildRequires:	cmake(KWayland)
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 KDE Desktop Sharing is a server application that allows you to share your
@@ -73,16 +75,5 @@ to view or even control the desktop.
 
 #----------------------------------------------------------------------------
 
-%prep
-%autosetup -p1 -n krfb-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DQT_MAJOR_VERSION=6 \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
+%install -a
 %find_lang krfb --with-html
