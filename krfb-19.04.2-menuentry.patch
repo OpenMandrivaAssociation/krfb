@@ -1,6 +1,6 @@
-diff -up krfb-24.05.0/krfb/org.kde.krfb.desktop.1~ krfb-24.05.0/krfb/org.kde.krfb.desktop
---- krfb-24.05.0/krfb/org.kde.krfb.desktop.1~	2024-05-21 16:21:15.000000000 +0200
-+++ krfb-24.05.0/krfb/org.kde.krfb.desktop	2024-05-24 02:06:34.302321593 +0200
+diff -up plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~ plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop
+--- plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~	2024-08-16 00:16:41.000000000 +0200
++++ plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop	2024-08-23 15:47:08.859251579 +0200
 @@ -6,76 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
@@ -147,8 +147,8 @@ diff -up krfb-24.05.0/krfb/org.kde.krfb.desktop.1~ krfb-24.05.0/krfb/org.kde.krf
 +Name[zh_TW]=桌面分享
  GenericName=Desktop Sharing (VNC)
  GenericName[ar]=مشاركة سطح المكتب (VNC)
- GenericName[ca]=Compartició de l'escriptori (VNC)
-@@ -186,6 +186,6 @@ Comment[x-test]=xxDesktop Sharingxx
+ GenericName[bg]=Споделяне на работния плот (VNC)
+@@ -187,6 +187,6 @@ Comment[x-test]=xxDesktop Sharingxx
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享
