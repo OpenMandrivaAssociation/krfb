@@ -1,7 +1,7 @@
-diff -up plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~ plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop
---- plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~	2024-08-16 00:16:41.000000000 +0200
-+++ plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop	2024-08-23 15:47:08.859251579 +0200
-@@ -6,76 +6,76 @@ Icon=krfb
+diff -up plasma6-krfb-25.04.0/krfb/org.kde.krfb.desktop.1~ plasma6-krfb-25.04.0/krfb/org.kde.krfb.desktop
+--- plasma6-krfb-25.04.0/krfb/org.kde.krfb.desktop.1~	2025-04-07 23:39:28.000000000 +0200
++++ plasma6-krfb-25.04.0/krfb/org.kde.krfb.desktop	2025-04-17 20:37:24.286169368 +0200
+@@ -6,77 +6,76 @@ Icon=krfb
  X-DBUS-StartupType=Unique
  X-DocPath=krfb/index.html
  Terminal=false
@@ -56,6 +56,7 @@ diff -up plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~ plasma6-krfb-24.08.0/
 -Name[pt_BR]=Krfb
 -Name[ro]=Krfb
 -Name[ru]=Krfb
+-Name[sa]=Krfb
 -Name[si]=Krfb
 -Name[sk]=Krfb
 -Name[sl]=Krfb
@@ -148,7 +149,7 @@ diff -up plasma6-krfb-24.08.0/krfb/org.kde.krfb.desktop.1~ plasma6-krfb-24.08.0/
  GenericName=Desktop Sharing (VNC)
  GenericName[ar]=مشاركة سطح المكتب (VNC)
  GenericName[bg]=Споделяне на работния плот (VNC)
-@@ -187,6 +187,6 @@ Comment[x-test]=xxDesktop Sharingxx
+@@ -191,6 +190,6 @@ Comment[x-test]=xxDesktop Sharingxx
  Comment[zh_CN]=桌面共享
  Comment[zh_HK]=桌面分享
  Comment[zh_TW]=桌面分享
