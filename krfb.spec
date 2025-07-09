@@ -4,7 +4,7 @@
 %define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	KDE Remote Desktop Server
-Name:		plasma6-krfb
+Name:		krfb
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
