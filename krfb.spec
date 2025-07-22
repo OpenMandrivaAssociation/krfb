@@ -5,7 +5,7 @@
 
 Summary:	KDE Remote Desktop Server
 Name:		krfb
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -50,6 +50,8 @@ BuildRequires:	cmake(KWayland)
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
+%rename plasma6-krfb
+
 %description
 KDE Desktop Sharing is a server application that allows you to share your
 current session with a user on another machine, who can use a VNC client
@@ -72,8 +74,3 @@ to view or even control the desktop.
 %{_datadir}/icons/*/*/*/krfb.*
 %{_datadir}/qlogging-categories6/krfb.categories
 %{_libdir}/libkrfbprivate.so*
-
-#----------------------------------------------------------------------------
-
-%install -a
-%find_lang krfb --with-html
