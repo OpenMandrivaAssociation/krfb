@@ -6,7 +6,7 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
 Version:	25.08.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
@@ -51,6 +51,8 @@ BuildRequires:	cmake(KPipeWire) < 6.27.60
 BuildRequires:	cmake(KWayland)
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+# Remove remnants of Plasma 5
+Obsoletes:	%{_lib}krfbprivate5
 
 %rename plasma6-krfb
 
