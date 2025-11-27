@@ -6,7 +6,7 @@
 Summary:	KDE Remote Desktop Server
 Name:		krfb
 Version:	25.08.3
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
